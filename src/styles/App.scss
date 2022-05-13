@@ -83,6 +83,10 @@ body {
           border: none;
           border-bottom: 2px solid white;
 
+          @media (max-width: 800px) {
+            width: 70%;  
+          }
+
           &:focus {
             outline: none;
           }
