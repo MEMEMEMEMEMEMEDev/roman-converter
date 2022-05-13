@@ -1,8 +1,9 @@
 export default function romanConverter(num) {
+  if (num % 1 !== 0) throw new Error('Only integers are allowed');
   if (num === '') throw new Error('Please enter a number');
   if (num === 0) throw new Error("0 is not a valid number");
   if (num < 0) throw new Error("Please enter a positive number");
-  if (num >= 4000) throw new Error("Number is too big!");
+  if (num >= 4000) throw new Error("Only numbers between 1 and 3999 are allowed");
 
   const romanNumbers = [
     { value: 1000, symbol: "M" },
